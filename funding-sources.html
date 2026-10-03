@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0D4B3A">
+<meta name="description" content="دليل جهات التمويل الأجنبي والدولي لدى وحدة الحلول التمويلية في بروفيشنال بلس — بنوك خليجية ودولية ومؤسسات تنمية، مع ملف تفصيلي لكل جهة.">
+<title>جهات التمويل الأجنبي والدولي | بروفيشنال بلس</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Noto+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --green:#0D4B3A;--green-deep:#093226;--cream:#F7F5EF;--cream-2:#FFFEFA;
+    --gold:#D7BD83;--gold-deep:#B99457;--sage:#718078;--sage-deep:#48625B;
+    --ink:#1A1A19;--line:#DFE3DB;--white:#FFFFFF;--gold-text:#8B6A34;
+    box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+  }
+  *{box-sizing:border-box;}
+  html{scroll-padding-top:env(safe-area-inset-top,0px);}
+  body{margin:0;background:var(--cream);color:var(--ink);font-family:"IBM Plex Sans Arabic","Noto Sans Arabic",Tahoma,Arial,sans-serif;line-height:1.8;}
+  img,svg{max-width:100%;display:block;}
+  a{color:inherit;}
+  button{font-family:inherit;}
+  .wrap{max-width:1120px;margin:0 auto;padding-inline:24px;}
+  @media (max-width:640px){.wrap{padding-inline:18px;}}
+
+  /* ---------- Hero ---------- */
+  .hero{background:linear-gradient(160deg,var(--green) 0%,var(--green-deep) 100%);color:var(--cream-2);padding:60px 0 68px;position:relative;overflow:hidden;}
+  .hero::after{content:"";position:absolute;inset-inline-end:-120px;top:-140px;width:420px;height:420px;border-radius:50%;border:1px solid rgba(215,189,131,.25);}
+  .kicker{display:inline-block;color:var(--gold);font-weight:600;font-size:13.5px;padding-bottom:10px;border-bottom:2px solid var(--gold-deep);margin-bottom:20px;}
+  .hero h1{margin:0 0 16px;font-size:clamp(26px,4.2vw,40px);font-weight:700;max-width:20ch;line-height:1.35;}
+  .hero p{margin:0;max-width:64ch;color:rgba(247,245,239,.86);font-size:16px;}
+  .hero-stats{display:flex;flex-wrap:wrap;gap:28px;margin-top:32px;}
+  .hero-stats div{min-width:100px;}
+  .hero-stats b{display:block;font-size:24px;color:var(--gold);}
+  .hero-stats span{font-size:12.5px;color:rgba(247,245,239,.72);}
+
+  /* ---------- Section shell ---------- */
+  section{padding:52px 0;}
+  section + section{border-top:1px solid var(--line);}
+  .head{max-width:72ch;margin-bottom:30px;}
+  .head .eyebrow{color:var(--sage-deep);font-weight:700;font-size:13px;margin:0 0 10px;}
+  .head h2{margin:0 0 12px;font-size:clamp(21px,2.6vw,27px);color:var(--green-deep);}
+  .head p{margin:0;color:var(--sage-deep);font-size:15px;}
+
+  /* ---------- Definition / forms ---------- */
+  .forms-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:12px;margin-top:24px;}
+  .form-item{background:var(--white);border:1px solid var(--line);border-radius:10px;padding:14px 16px;font-size:14.5px;border-inline-start:3px solid var(--gold);}
+
+  /* ---------- Suitability ---------- */
+  .fit-columns{display:grid;grid-template-columns:1.15fr .85fr;gap:28px;}
+  @media (max-width:760px){.fit-columns{grid-template-columns:1fr;}}
+  .fit-list{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:12px;}
+  .fit-list li{display:flex;gap:12px;padding:14px 16px;background:var(--white);border:1px solid var(--line);border-radius:10px;font-size:14.5px;}
+  .fit-list li::before{content:"";flex-shrink:0;width:8px;height:8px;margin-top:8px;border-radius:50%;background:var(--green);}
+  .note-box{background:var(--green-deep);color:var(--cream-2);border-radius:14px;padding:24px;font-size:14.5px;align-self:start;}
+  .note-box strong{color:var(--gold);display:block;margin-bottom:8px;font-size:13px;}
+
+  /* ---------- Directory: search + filters ---------- */
+  .directory-tools{display:flex;flex-direction:column;gap:16px;margin-bottom:30px;}
+  .search-box{position:relative;max-width:420px;}
+  .search-box input{width:100%;font-family:inherit;font-size:14.5px;padding:13px 44px 13px 16px;border-radius:11px;border:1px solid var(--line);background:var(--white);color:var(--ink);outline:none;}
+  .search-box input:focus{border-color:var(--gold-deep);}
+  .search-box svg{position:absolute;inset-inline-end:14px;top:50%;transform:translateY(-50%);color:var(--sage-deep);pointer-events:none;}
+  .filter-row{display:flex;flex-wrap:wrap;gap:9px;}
+  .chip{font-size:13.3px;font-weight:600;padding:9px 18px;border-radius:999px;border:1px solid var(--line);background:var(--white);color:var(--sage-deep);cursor:pointer;}
+  .chip[aria-pressed="true"]{background:var(--green);border-color:var(--green);color:var(--cream-2);}
+  .result-count{font-size:13px;color:var(--sage-deep);margin:0 0 18px;}
+  .no-results{display:none;text-align:center;padding:44px 20px;color:var(--sage-deep);font-size:14.5px;background:var(--white);border:1px dashed var(--line);border-radius:14px;}
+
+  .cat-block{margin-bottom:38px;}
+  .cat-block:last-child{margin-bottom:0;}
+  .cat-block.is-empty{display:none;}
+  .cat-title{display:flex;align-items:baseline;gap:12px;margin:0 0 16px;}
+  .cat-title h3{margin:0;font-size:18px;color:var(--green-deep);}
+  .cat-title span{font-size:12px;color:var(--sage-deep);border:1px solid var(--line);padding:3px 10px;border-radius:999px;}
+
+  .entity-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(272px,1fr));gap:16px;}
+  .entity-card{background:var(--white);border:1px solid var(--line);border-radius:14px;padding:19px 21px;display:flex;flex-direction:column;gap:12px;transition:border-color .2s ease, transform .2s ease;}
+  .entity-card:hover{border-color:var(--gold-deep);transform:translateY(-2px);}
+  .entity-card.is-hidden{display:none;}
+  .entity-card .row-top{display:flex;gap:12px;align-items:flex-start;}
+  .logo-badge{
+    flex-shrink:0;width:44px;height:44px;border-radius:11px;
+    display:flex;align-items:center;justify-content:center;
+    background:var(--green-deep);color:var(--gold);
+    font-weight:700;font-size:12.5px;letter-spacing:.2px;
+  }
+  .entity-card .name-block{flex:1;min-width:0;}
+  .entity-card .name-row{display:flex;justify-content:space-between;align-items:flex-start;gap:8px;}
+  .entity-card h4{margin:0;font-size:15px;color:var(--ink);line-height:1.4;}
+  .entity-card h4 em{display:block;font-style:normal;font-size:12px;color:var(--sage-deep);font-weight:400;margin-top:2px;}
+  .country-tag{flex-shrink:0;font-size:11px;font-weight:600;color:var(--gold-text);background:#FBF6EC;border:1px solid #ECDFC2;padding:3px 9px;border-radius:999px;white-space:nowrap;}
+  .type-tag{display:inline-block;font-size:10.5px;color:var(--sage-deep);margin-top:5px;}
+  .entity-card p{margin:0;font-size:13.4px;color:var(--sage-deep);}
+  .entity-card .tags{display:flex;flex-wrap:wrap;gap:6px;}
+  .entity-card .tags span{font-size:11px;color:var(--sage-deep);background:var(--cream);border:1px solid var(--line);padding:2px 9px;border-radius:999px;}
+  .profile-btn{
+    margin-top:2px;align-self:flex-start;
+    font-size:12.8px;font-weight:700;color:var(--green-deep);
+    background:none;border:none;cursor:pointer;
+    padding:0;display:flex;align-items:center;gap:6px;
+  }
+  .profile-btn:hover{color:var(--gold-deep);}
+  .profile-btn svg{transition:transform .15s ease;}
+  .profile-btn:hover svg{transform:translateX(-3px);}
+
+  .disclaimer{display:flex;gap:12px;align-items:flex-start;background:#FBF6EC;border:1px solid #ECDFC2;border-radius:12px;padding:16px 18px;margin-top:30px;font-size:13.3px;color:var(--sage-deep);}
+  .disclaimer svg{flex-shrink:0;color:var(--gold-text);margin-top:2px;}
+  .disclaimer strong{color:var(--ink);}
+
+  /* ---------- Modal ---------- */
+  .modal-overlay{
+    position:fixed;inset:0;background:rgba(9,50,38,.6);
+    display:flex;align-items:center;justify-content:center;
+    padding:20px;z-index:100;
+  }
+  .modal-overlay[hidden]{display:none;}
+  .modal-card{
+    background:var(--cream-2);border-radius:18px;
+    max-width:520px;width:100%;max-height:88vh;overflow-y:auto;
+    padding:30px 28px 26px;position:relative;
+    box-shadow:0 30px 70px rgba(9,50,38,.35);
+  }
+  .modal-close{
+    position:absolute;top:16px;left:16px;
+    width:32px;height:32px;border-radius:50%;
+    border:1px solid var(--line);background:var(--white);
+    color:var(--sage-deep);font-size:16px;cursor:pointer;
+    display:flex;align-items:center;justify-content:center;
+  }
+  .modal-close:hover{border-color:var(--gold-deep);color:var(--green-deep);}
+  .modal-head{display:flex;gap:14px;align-items:flex-start;margin-bottom:16px;padding-inline-end:36px;}
+  .modal-logo{width:56px;height:56px;border-radius:13px;flex-shrink:0;display:flex;align-items:center;justify-content:center;background:var(--green-deep);color:var(--gold);font-weight:700;font-size:14px;}
+  .modal-type{display:block;font-size:12px;color:var(--sage-deep);margin-bottom:4px;}
+  .modal-head h3{margin:0;font-size:19px;color:var(--green-deep);line-height:1.4;}
+  .modal-country{display:inline-block;margin-top:6px;font-size:12px;font-weight:600;color:var(--gold-text);background:#FBF6EC;border:1px solid #ECDFC2;padding:3px 10px;border-radius:999px;}
+  .modal-card p{font-size:14.3px;color:var(--ink);margin:0 0 16px;}
+  .modal-tags{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:18px;}
+  .modal-tags span{font-size:12px;color:var(--sage-deep);background:var(--cream);border:1px solid var(--line);padding:4px 11px;border-radius:999px;}
+  .modal-approach{background:var(--cream);border-radius:12px;padding:14px 16px;font-size:13.3px;color:var(--sage-deep);border-inline-start:3px solid var(--gold);}
+  .modal-approach strong{display:block;color:var(--ink);font-size:12.5px;margin-bottom:5px;}
+
+  /* ---------- Process ---------- */
+  .process-list{display:flex;flex-direction:column;margin-top:8px;}
+  .process-item{display:grid;grid-template-columns:64px 1fr;gap:20px;padding:20px 0;border-top:1px solid var(--line);}
+  .process-item:last-child{border-bottom:1px solid var(--line);}
+  .process-num{font-size:22px;font-weight:700;color:var(--gold-text);font-variant-numeric:tabular-nums;}
+  .process-item h4{margin:0 0 6px;font-size:15.5px;color:var(--green-deep);}
+  .process-item p{margin:0;font-size:14px;color:var(--sage-deep);max-width:65ch;}
+
+  /* ---------- Checklist ---------- */
+  .checklist{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:10px 22px;margin-top:8px;list-style:none;padding:0;}
+  .checklist li{font-size:14px;padding:10px 0;border-bottom:1px dashed var(--line);display:flex;gap:10px;}
+  .checklist li::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--sage);margin-top:8px;flex-shrink:0;}
+
+  /* ---------- FAQ ---------- */
+  .faq{max-width:80ch;}
+  details{border-bottom:1px solid var(--line);padding:16px 0;}
+  summary{cursor:pointer;font-weight:600;font-size:15.5px;color:var(--green-deep);list-style:none;display:flex;justify-content:space-between;align-items:center;gap:14px;}
+  summary::-webkit-details-marker{display:none;}
+  summary::after{content:"+";font-size:20px;color:var(--gold-deep);flex-shrink:0;}
+  details[open] summary::after{content:"–";}
+  details p{margin:12px 0 0;font-size:14.3px;color:var(--sage-deep);}
+
+  /* ---------- CTA ---------- */
+  .cta{background:var(--green);color:var(--cream-2);border-radius:18px;padding:44px 36px;text-align:center;}
+  .cta h2{margin:0 0 10px;font-size:clamp(20px,2.6vw,26px);}
+  .cta p{margin:0 auto 24px;max-width:56ch;color:rgba(247,245,239,.82);font-size:14.5px;}
+  .cta .btn{display:inline-block;background:var(--gold);color:var(--green-deep);font-weight:700;font-size:14.5px;padding:13px 30px;border-radius:999px;text-decoration:none;}
+
+  footer{text-align:center;color:var(--sage-deep);font-size:12.5px;padding:26px 20px 40px;}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <p class="kicker">وحدة الحلول التمويلية</p>
+    <h1>دليل جهات التمويل الأجنبي والدولي</h1>
+    <p>مجموعة من البنوك الخليجية والدولية ومؤسسات التمويل والتنمية التي يمكن دراسة ملاءمتها لمشروعك. ابحث أو صفِّ القائمة، ثم افتح ملف أي جهة لمعرفة تفاصيلها.</p>
+    <div class="hero-stats">
+      <div><b>13</b><span>بنك خليجي ودولي</span></div>
+      <div><b>4</b><span>مؤسسات تنمية دولية</span></div>
+      <div><b>5</b><span>مجالات تمويل رئيسية</span></div>
+    </div>
+  </div>
+</header>
+
+<section id="definition">
+  <div class="wrap">
+    <div class="head">
+      <p class="eyebrow">تعريف</p>
+      <h2>ما المقصود بالتمويل الأجنبي والدولي؟</h2>
+      <p>مصادر تمويل توفرها بنوك ومؤسسات مالية وصناديق تنمية دولية خارج السوق المحلي، عبر فروع أجنبية مرخصة داخل المملكة، أو مؤسسات دولية تمول المشروع مباشرة، أو من خلال شراكات وقروض مشتركة وبنوك وسيطة.</p>
+    </div>
+    <div class="forms-grid">
+      <div class="form-item">تمويل رأس المال العامل والتوسع</div>
+      <div class="form-item">تمويل شراء الآلات وخطوط الإنتاج</div>
+      <div class="form-item">تمويل المشروعات Project Finance</div>
+      <div class="form-item">تمويل التجارة والاستيراد والتصدير</div>
+      <div class="form-item">خطابات الاعتماد والضمانات</div>
+      <div class="form-item">التمويل المنظم Structured Finance</div>
+      <div class="form-item">التمويل القائم على الأصول أو التدفقات</div>
+      <div class="form-item">تمويل الاستحواذ والاندماج</div>
+      <div class="form-item">القروض المشتركة Syndicated Loans</div>
+      <div class="form-item">القروض طويلة الأجل</div>
+      <div class="form-item">تمويل شبه الملكية لدى مؤسسات دولية</div>
+    </div>
+  </div>
+</section>
+
+<section id="fit">
+  <div class="wrap">
+    <div class="head">
+      <p class="eyebrow">الملاءمة</p>
+      <h2>متى يكون التمويل الأجنبي أو الدولي مناسبًا؟</h2>
+      <p>يكون هذا المسار أكثر ملاءمة عند الحاجة إلى تمويل متوسط أو كبير، أو عندما تتطلب الصفقة هيكلًا تمويليًا متعدد المصادر.</p>
+    </div>
+    <div class="fit-columns">
+      <ul class="fit-list">
+        <li>مصانع قائمة تستهدف توسعة كبيرة أو خطوط إنتاج مستوردة</li>
+        <li>مشروعات الطاقة والمياه واللوجستيات والبنية التحتية</li>
+        <li>مشروعات التعدين والبتروكيماويات والصناعات التحويلية</li>
+        <li>شركات قائمة ذات إيرادات وتدفقات نقدية مستقرة</li>
+        <li>مشروعات تمتلك عقودًا أو تدفقات مستقبلية يُبنى عليها هيكل التمويل</li>
+        <li>صفقات استحواذ وشراء أصول ذات قيمة مرتفعة</li>
+        <li>شركات تحتاج إلى تمويل بالدولار أو اليورو</li>
+        <li>صفقات تتجاوز قدرة ممول واحد وتحتاج لهيكل متعدد الأطراف</li>
+      </ul>
+      <div class="note-box">
+        <strong>للاحتياجات الصغيرة</strong>
+        قد تكون البدائل المحلية — كالبنوك السعودية وشركات التمويل وبرنامج كفالة والصناديق المحلية — أكثر عملية بحسب طبيعة الحالة.
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="entities">
+  <div class="wrap">
+    <div class="head">
+      <p class="eyebrow">دليل الجهات</p>
+      <h2>جهات يمكن دراسة استهدافها</h2>
+      <p>تختلف الجهة المناسبة من حالة إلى أخرى وفقًا لحجم التمويل، وطبيعة القطاع، والمرحلة التشغيلية، والتدفقات النقدية، والضمانات. استخدم البحث أو الفلاتر لتضييق القائمة، ثم اضغط "عرض ملف الجهة" لمزيد من التفاصيل.</p>
+    </div>
+
+    <div class="directory-tools">
+      <div class="search-box">
+        <input id="entitySearch" type="text" placeholder="ابحث باسم الجهة أو الدولة...">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+      </div>
+      <div class="filter-row" id="filterRow">
+        <button class="chip" data-filter="all" aria-pressed="true">الكل</button>
+        <button class="chip" data-filter="bank" aria-pressed="false">بنوك</button>
+        <button class="chip" data-filter="dev" aria-pressed="false">مؤسسات دولية</button>
+        <button class="chip" data-filter="trade" aria-pressed="false">تمويل تجارة</button>
+        <button class="chip" data-filter="energy" aria-pressed="false">الطاقة والمرافق</button>
+        <button class="chip" data-filter="industry" aria-pressed="false">الصناعة والمعدات</button>
+      </div>
+    </div>
+
+    <p class="result-count" id="resultCount"></p>
+
+    <div class="cat-block" id="block-bank" data-block>
+      <div class="cat-title"><h3>البنوك والجهات المصرفية</h3><span>13 جهة</span></div>
+      <div class="entity-grid" id="grid-bank"></div>
+    </div>
+
+    <div class="cat-block" id="block-dev" data-block>
+      <div class="cat-title"><h3>مؤسسات التمويل والتنمية الدولية</h3><span>4 جهات</span></div>
+      <div class="entity-grid" id="grid-dev"></div>
+    </div>
+
+    <p class="no-results" id="noResults">لا توجد جهات مطابقة لبحثك أو للفلتر المحدد. جرّب كلمة أخرى أو اختر "الكل".</p>
+
+    <div class="disclaimer">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="13"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+      <span><strong>تنبيه مهني:</strong> إدراج أي جهة في هذا الدليل لا يعني ضمان قبول التمويل أو التزامًا من جانبها، وإنما هي جهات يمكن دراسة ملاءمتها لكل حالة على حدة وفق حجم الصفقة والقطاع والضمانات المتاحة.</span>
+    </div>
+  </div>
+</section>
+
+<section id="process">
+  <div class="wrap">
+    <div class="head">
+      <p class="eyebrow">منهجية العمل</p>
+      <h2>كيف نساعدك في الوصول إلى التمويل؟</h2>
+      <p>لا تبدأ عملية الحصول على التمويل بمخاطبة أكبر عدد من الجهات، بل بتحديد مدى جاهزية المشروع والجهة الأنسب لطبيعة الاحتياج.</p>
+    </div>
+    <div class="process-list">
+      <div class="process-item"><span class="process-num">01</span><div><h4>تقييم الجاهزية التمويلية</h4><p>تحليل الوضع المالي والاستثماري للمشروع وتحديد مدى جاهزيته للتواصل مع الجهات التمويلية.</p></div></div>
+      <div class="process-item"><span class="process-num">02</span><div><h4>تحديد الاحتياج التمويلي</h4><p>تحديد حجم التمويل المطلوب، والغرض منه، ومدته، وهيكل السداد المقترح.</p></div></div>
+      <div class="process-item"><span class="process-num">03</span><div><h4>إعداد دراسة الجدوى</h4><p>إعداد أو تطوير دراسة الجدوى بما يدعم الملف الاستثماري ويُظهر الجدوى الاقتصادية والتجارية.</p></div></div>
+      <div class="process-item"><span class="process-num">04</span><div><h4>إعداد النموذج المالي</h4><p>بناء نموذج يوضح الإيرادات والتكاليف والتدفقات النقدية والقدرة على خدمة الدين.</p></div></div>
+      <div class="process-item"><span class="process-num">05</span><div><h4>هيكلة التمويل</h4><p>دراسة البدائل المتاحة وتحديد الهيكل المناسب وفق مصادر السداد والأصول والتدفقات.</p></div></div>
+      <div class="process-item"><span class="process-num">06</span><div><h4>تحديد الجهات المستهدفة</h4><p>بناء قائمة بالجهات المتوافقة مع القطاع وحجم الصفقة والمرحلة الاستثمارية.</p></div></div>
+      <div class="process-item"><span class="process-num">07</span><div><h4>إعداد الملف التمويلي</h4><p>تجهيز المستندات والمعلومات الأساسية لتقديم المشروع بصورة مهنية.</p></div></div>
+      <div class="process-item"><span class="process-num">08</span><div><h4>إعداد مذكرة التمويل</h4><p>إعداد Funding Memorandum / Investment Teaser يوضح المشروع وأبرز مؤشراته.</p></div></div>
+      <div class="process-item"><span class="process-num">09</span><div><h4>إعداد خطة التواصل</h4><p>تحديد تسلسل التواصل مع الجهات المستهدفة وطريقة تقديم المشروع في كل مرحلة.</p></div></div>
+      <div class="process-item"><span class="process-num">10</span><div><h4>دعم التقديم والمتابعة</h4><p>دعم العميل في تجهيز المعلومات والتعامل مع مراحل التواصل الأولي وفق نطاق الخدمة.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="checklist">
+  <div class="wrap">
+    <div class="head">
+      <p class="eyebrow">قبل التقديم</p>
+      <h2>ما الذي يجب تجهيزه قبل التقدم للتمويل؟</h2>
+      <p>تختلف المتطلبات حسب الجهة ونوع التمويل، إلا أن قوة الملف ترتبط عادةً بتوافر هذه العناصر:</p>
+    </div>
+    <ul class="checklist">
+      <li>دراسة جدوى متكاملة</li>
+      <li>نموذج مالي تفصيلي</li>
+      <li>خطة تدفقات نقدية</li>
+      <li>قوائم مالية للشركات القائمة</li>
+      <li>قوائم مالية مدققة عند طلبها</li>
+      <li>بيانات المساهمين وهيكل الملكية</li>
+      <li>بيانات الشركة والإدارة</li>
+      <li>تفاصيل التمويل المطلوب واستخداماته</li>
+      <li>العقود أو أوامر الشراء أو العملاء</li>
+      <li>التراخيص والموافقات الأساسية</li>
+      <li>الضمانات والأصول المتاحة</li>
+      <li>مساهمة ذاتية واضحة</li>
+      <li>معلومات الموردين والمقاولين عند ارتباطهم بالمشروع</li>
+      <li>أي مستندات إضافية تطلبها الجهة التمويلية</li>
+    </ul>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="wrap">
+    <div class="head">
+      <p class="eyebrow">أسئلة شائعة</p>
+      <h2>أسئلة يتكرر طرحها</h2>
+    </div>
+    <div class="faq">
+      <details>
+        <summary>هل يمكن الحصول على التمويل بالريال السعودي؟</summary>
+        <p>نعم، يمكن أن توفر البنوك الأجنبية المرخصة داخل السعودية تمويلًا بالريال، بينما قد تقدم بعض المؤسسات الدولية التمويل بالدولار أو اليورو أو عملات أخرى وفقًا لطبيعة الصفقة.</p>
+      </details>
+      <details>
+        <summary>هل التمويل الأجنبي يعني دخول مستثمر في ملكية الشركة؟</summary>
+        <p>ليس بالضرورة؛ فقد يكون التمويل في صورة قرض تمويلي أو تمويل مشروع أو معدات أو رأس مال عامل أو تمويل تجارة أو منظم أو مشترك. وفي حالات محدودة قد تُقدَّم جهات استثمارًا في الملكية أو تمويلًا شبه رأسمالي.</p>
+      </details>
+      <details>
+        <summary>هل التمويل الدولي مناسب لكل المشروعات؟</summary>
+        <p>لا. تختلف الملاءمة باختلاف حجم المشروع ومرحلة التشغيل وقوة المركز المالي والقدرة على السداد والتدفقات والضمانات. الشركات القائمة والمشروعات المتوسطة والكبيرة ذات النموذج المالي الواضح أكثر قابلية لدراسة هذا المسار، بينما تحتاج المشروعات الجديدة إلى مساهمة ذاتية ودراسة جدوى قوية وضمانات مناسبة.</p>
+      </details>
+      <details>
+        <summary>ما مدة التمويل؟ وهل توجد فترة سماح؟</summary>
+        <p>تختلف المدة حسب نوع التمويل؛ فتمويل رأس المال العامل غالبًا قصير الأجل، بينما تمتد تمويلات المشروعات والمعدات لسنوات، وقد تطول المدة لدى مؤسسات التمويل التنموية. وقد تتضمن بعض الهياكل فترة سماح للمشروعات التي تحتاج إنشاءً أو تشغيلًا قبل توليد الإيرادات.</p>
+      </details>
+      <details>
+        <summary>هل التمويل الدولي سريع؟</summary>
+        <p>عادةً لا يكون أسرع من التمويل البنكي المحلي، إذ قد تتطلب الجهات الدولية فحصًا نافيًا للجهالة أكثر تفصيلًا، خصوصًا في المشروعات الكبيرة والمعقدة.</p>
+      </details>
+      <details>
+        <summary>ما العوامل التي تدعم جاهزية الملف؟</summary>
+        <p>وجود شركة قائمة ومستقرة، مساهمة ذاتية واضحة، قوائم مالية، نموذج مالي متكامل، عقود أو عملاء حقيقيون، ضمانات مناسبة، وإدارة ذات خبرة مثبتة.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section id="cta-section">
+  <div class="wrap">
+    <div class="cta">
+      <h2>هل تبحث عن جهة تمويل تناسب مشروعك؟</h2>
+      <p>نساعدك في تقييم جاهزية ملفك وتحديد الجهات الأنسب لحجم صفقتك وقطاعك، قبل بدء أي تواصل مع الممولين.</p>
+      <a class="btn" href="#contact">تواصل مع وحدة الحلول التمويلية</a>
+    </div>
+  </div>
+</section>
+
+<footer>وحدة الحلول التمويلية — بروفيشنال بلس للاستشارات الاقتصادية</footer>
+
+<div class="modal-overlay" id="modalOverlay" hidden>
+  <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <button class="modal-close" id="modalClose" aria-label="إغلاق">×</button>
+    <div class="modal-head">
+      <div class="modal-logo" id="modalLogo"></div>
+      <div>
+        <span class="modal-type" id="modalType"></span>
+        <h3 id="modalTitle"></h3>
+        <br><span class="modal-country" id="modalCountry"></span>
+      </div>
+    </div>
+    <p id="modalDesc"></p>
+    <div class="modal-tags" id="modalTags"></div>
+    <div class="modal-approach" id="modalApproach"></div>
+  </div>
+</div>
+
+<script>
+(function(){
+  var ENTITIES = [
+    {id:'enbd',code:'ENBD',name:'Emirates NBD',nameAr:'بنك الإمارات دبي الوطني',country:'الإمارات',type:'bank',sectors:['general'],tags:['تمويل عام','تمويل مشترك'],desc:'للشركات القائمة، والمنشآت الصغيرة والمتوسطة المؤهلة، ومشروعات التوسع والتمويلات المشتركة، مع التواصل مع قطاعات الخدمات المصرفية للشركات والتمويل المؤسسي.'},
+    {id:'nbk',code:'NBK',name:'National Bank of Kuwait',nameAr:'بنك الكويت الوطني',country:'الكويت',type:'bank',sectors:['general'],tags:['تمويل عام','معدات'],desc:'للمنشآت الصغيرة والمتوسطة والكبيرة والشركات القائمة والمشروعات ذات التدفقات النقدية الواضحة، بما يشمل تمويل رأس المال العامل والمعدات والمشروعات.'},
+    {id:'fab',code:'FAB',name:'First Abu Dhabi Bank',nameAr:'بنك أبوظبي الأول',country:'الإمارات',type:'bank',sectors:['general'],tags:['تمويل مؤسسي','تمويل منظم'],desc:'للشركات المتوسطة والكبيرة وصفقات التمويل المؤسسي والتمويل المنظم، مع إعداد مذكرة تمويل مختصرة قبل تقديم الملف الكامل.'},
+    {id:'qnb',code:'QNB',name:'QNB',nameAr:'بنك قطر الوطني',country:'قطر',type:'bank',sectors:['general'],tags:['تمويل تشغيلي','قروض لأجل'],desc:'للشركات القائمة ذات الدورة التشغيلية الواضحة، واحتياجات التمويل التشغيلي والتجاري والقروض لأجل.'},
+    {id:'nbb',code:'NBB',name:'National Bank of Bahrain',nameAr:'بنك البحرين الوطني',country:'البحرين',type:'bank',sectors:['general'],tags:['تمويل عام'],desc:'للشركات القائمة ذات العلاقات التجارية الخليجية، مع ضرورة التحقق من شهية القطاع والمنتج التمويلي قبل تجهيز ملف الفحص النافي للجهالة.'},
+    {id:'bm',code:'BM',name:'Bank Muscat',nameAr:'بنك مسقط',country:'عُمان',type:'bank',sectors:['general'],tags:['تمويل عام'],desc:'للحالات التي تتضمن روابط تجارية أو تشغيلية خليجية، من خلال تقديم ملف تعريفي وطلب تمويل واضح.'},
+    {id:'db',code:'DB',name:'Deutsche Bank',country:'ألمانيا',type:'bank',sectors:['trade'],tags:['تمويل تجارة','تمويل منظم'],desc:'للشركات المتوسطة والكبيرة القوية، والصفقات المنظمة، وتمويل التجارة الدولية.'},
+    {id:'bnpp',code:'BNPP',name:'BNP Paribas',country:'فرنسا',type:'bank',sectors:['general'],tags:['تمويل مؤسسي'],desc:'للشركات والمجموعات الكبيرة والمشروعات والصفقات المؤسسية التي تتمتع بحجم وهيكل مناسب.'},
+    {id:'jpm',code:'JPM',name:'J.P. Morgan',country:'الولايات المتحدة',type:'bank',sectors:['general'],tags:['استحواذ واندماج','هيكلة رأسمالية'],desc:'للحالات المؤسسية الكبيرة، وعمليات الاستحواذ والتمويل والهيكلة الرأسمالية.'},
+    {id:'icbc',code:'ICBC',name:'ICBC',nameAr:'البنك الصناعي والتجاري الصيني',country:'الصين',type:'bank',sectors:['industry','trade'],tags:['معدات وموردين','تمويل تجارة'],desc:'للمشروعات التي ترتبط بموردين أو مقاولين أو معدات صينية، خصوصًا عندما يكون للمشروع مكون استيراد أو مورد صيني.'},
+    {id:'mufg',code:'MUFG',name:'MUFG Bank',country:'اليابان',type:'bank',sectors:['energy','industry'],tags:['طاقة وبنية تحتية','صناعة'],desc:'للشركات الكبيرة ومشروعات البنية التحتية والطاقة والصناعة والصفقات ذات الروابط الدولية والآسيوية.'},
+    {id:'tcz',code:'TCZ',name:'T.C. Ziraat Bankası',country:'تركيا',type:'bank',sectors:['trade'],tags:['تمويل تجارة'],desc:'للحالات التي تتضمن علاقات تجارية أو موردين أو تدفقات مرتبطة بتركيا.'},
+    {id:'nbp',code:'NBP',name:'National Bank of Pakistan',country:'باكستان',type:'bank',sectors:['trade'],tags:['تمويل تجارة'],desc:'للحالات التي تتضمن علاقات أو تدفقات تجارية مناسبة، بعد التحقق من ملاءمة القطاع والمنتج التمويلي.'},
+    {id:'ifc',code:'IFC',name:'IFC',nameAr:'مؤسسة التمويل الدولية',country:'مجموعة البنك الدولي',type:'dev',sectors:['general'],tags:['تمويل مباشر','قطاع خاص'],desc:'تستهدف تمويل مشروعات وشركات القطاع الخاص التي تتمتع بجدوى اقتصادية واضحة وحجم مناسب، عبر تمويل مباشر متوسط أو طويل الأجل، مع إمكانية استخدام بنوك وسيطة في بعض الحالات.'},
+    {id:'icd',code:'ICD',name:'ICD',nameAr:'المؤسسة الإسلامية لتنمية القطاع الخاص',country:'مجموعة البنك الإسلامي للتنمية',type:'dev',sectors:['industry','energy','general'],tags:['صناعة','بنية تحتية','تمويل إسلامي'],desc:'مؤسسة تمويل تنموية إسلامية يمكن دراسة ملاءمتها للمشروعات الخاصة القابلة للتمويل المصرفي في الصناعة والبنية التحتية والصحة والتعليم والزراعة والخدمات.'},
+    {id:'itfc',code:'ITFC',name:'ITFC',nameAr:'المؤسسة الدولية الإسلامية لتمويل التجارة',country:'مجموعة البنك الإسلامي للتنمية',type:'dev',sectors:['trade'],tags:['تمويل تجارة','تمويل إسلامي'],desc:'تختص بتمويل التجارة الدولية للشركات العاملة في الاستيراد والتصدير وسلاسل الإمداد، غالبًا من خلال هياكل تمويل التجارة والبنوك والمؤسسات الوسيطة.'},
+    {id:'aef',code:'AEF',name:'الصندوق العربي للطاقة',country:'إقليمي عربي',type:'dev',sectors:['energy'],tags:['طاقة ومرافق','طاقة متجددة'],desc:'للمشروعات المرتبطة بقطاعات الطاقة والمرافق والهيدروكربونات والطاقة المتجددة وكفاءة الطاقة والاقتصاد الدائري.'}
+  ];
+
+  var TYPE_LABEL = {bank:'بنك تجاري', dev:'مؤسسة تنمية دولية'};
+  var APPROACH = {
+    bank:'يُفضّل تجهيز مذكرة تمويل مختصرة (Funding Memorandum) وملف تعريفي عن الشركة قبل التواصل مع قطاع الخدمات المصرفية للشركات أو التمويل المؤسسي لدى الجهة.',
+    dev:'يتم التقديم غالبًا عبر مقترح استثماري أو ملف مشروع متكامل يشمل دراسة الجدوى والنموذج المالي، وليس عبر نموذج قرض تقليدي موحّد.'
+  };
+
+  var gridBank = document.getElementById('grid-bank');
+  var gridDev = document.getElementById('grid-dev');
+
+  function cardHTML(e){
+    var nameLine = e.nameAr ? '<em>'+e.nameAr+'</em>' : '';
+    var tags = e.tags.map(function(t){return '<span>'+t+'</span>';}).join('');
+    return (
+      '<div class="entity-card" data-id="'+e.id+'" data-type="'+e.type+'" data-sector="'+e.sectors.join(' ')+'" data-name="'+e.name+' '+(e.nameAr||'')+' '+e.country+'">'+
+        '<div class="row-top">'+
+          '<div class="logo-badge">'+e.code+'</div>'+
+          '<div class="name-block">'+
+            '<div class="name-row"><h4>'+e.name+nameLine+'</h4><span class="country-tag">'+e.country+'</span></div>'+
+            '<span class="type-tag">'+TYPE_LABEL[e.type]+'</span>'+
+          '</div>'+
+        '</div>'+
+        '<p>'+e.desc+'</p>'+
+        '<div class="tags">'+tags+'</div>'+
+        '<button class="profile-btn" data-open="'+e.id+'">عرض ملف الجهة '+
+          '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>'+
+        '</button>'+
+      '</div>'
+    );
+  }
+
+  ENTITIES.forEach(function(e){
+    var html = cardHTML(e);
+    if(e.type === 'bank') gridBank.insertAdjacentHTML('beforeend', html);
+    else gridDev.insertAdjacentHTML('beforeend', html);
+  });
+
+  /* ---- search + filter ---- */
+  var search = document.getElementById('entitySearch');
+  var chips = Array.prototype.slice.call(document.querySelectorAll('.chip'));
+  var blocks = Array.prototype.slice.call(document.querySelectorAll('[data-block]'));
+  var noResults = document.getElementById('noResults');
+  var resultCount = document.getElementById('resultCount');
+  var activeFilter = 'all';
+
+  function matchesFilter(card, filter){
+    if(filter === 'all') return true;
+    if(filter === 'bank' || filter === 'dev') return card.getAttribute('data-type') === filter;
+    return (card.getAttribute('data-sector') || '').split(' ').indexOf(filter) !== -1;
+  }
+
+  function apply(){
+    var query = (search.value || '').trim().toLowerCase();
+    var cards = Array.prototype.slice.call(document.querySelectorAll('.entity-card'));
+    var visible = 0;
+    cards.forEach(function(card){
+      var name = (card.getAttribute('data-name') || '').toLowerCase();
+      var show = matchesFilter(card, activeFilter) && (!query || name.indexOf(query) !== -1);
+      card.classList.toggle('is-hidden', !show);
+      if(show) visible++;
+    });
+    blocks.forEach(function(block){
+      var anyVisible = block.querySelectorAll('.entity-card:not(.is-hidden)').length > 0;
+      block.classList.toggle('is-empty', !anyVisible);
+    });
+    noResults.style.display = visible === 0 ? 'block' : 'none';
+    resultCount.textContent = visible + ' جهة مطابقة من إجمالي ' + cards.length;
+  }
+
+  chips.forEach(function(chip){
+    chip.addEventListener('click', function(){
+      chips.forEach(function(c){ c.setAttribute('aria-pressed','false'); });
+      chip.setAttribute('aria-pressed','true');
+      activeFilter = chip.getAttribute('data-filter');
+      apply();
+    });
+  });
+  search.addEventListener('input', apply);
+  apply();
+
+  /* ---- modal ---- */
+  var overlay = document.getElementById('modalOverlay');
+  var elLogo = document.getElementById('modalLogo');
+  var elType = document.getElementById('modalType');
+  var elTitle = document.getElementById('modalTitle');
+  var elCountry = document.getElementById('modalCountry');
+  var elDesc = document.getElementById('modalDesc');
+  var elTags = document.getElementById('modalTags');
+  var elApproach = document.getElementById('modalApproach');
+  var lastFocused = null;
+
+  function openModal(id){
+    var e = ENTITIES.filter(function(x){return x.id === id;})[0];
+    if(!e) return;
+    elLogo.textContent = e.code;
+    elType.textContent = TYPE_LABEL[e.type];
+    elTitle.textContent = e.name + (e.nameAr ? ' — ' + e.nameAr : '');
+    elCountry.textContent = e.country;
+    elDesc.textContent = e.desc;
+    elTags.innerHTML = e.tags.map(function(t){return '<span>'+t+'</span>';}).join('');
+    elApproach.innerHTML = '<strong>طريقة التواصل المقترحة</strong>' + APPROACH[e.type];
+    lastFocused = document.activeElement;
+    overlay.hidden = false;
+    document.getElementById('modalClose').focus();
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeModal(){
+    overlay.hidden = true;
+    document.body.style.overflow = '';
+    if(lastFocused) lastFocused.focus();
+  }
+
+  document.addEventListener('click', function(ev){
+    var openBtn = ev.target.closest('[data-open]');
+    if(openBtn){ openModal(openBtn.getAttribute('data-open')); return; }
+    if(ev.target === overlay){ closeModal(); }
+  });
+  document.getElementById('modalClose').addEventListener('click', closeModal);
+  document.addEventListener('keydown', function(ev){
+    if(ev.key === 'Escape' && !overlay.hidden) closeModal();
+  });
+})();
+</script>
+
+</body>
+</html>

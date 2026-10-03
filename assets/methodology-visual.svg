@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 700" width="800" height="700">
+  <defs>
+    <linearGradient id="mBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#06301F"/>
+      <stop offset="100%" stop-color="#0D4B34"/>
+    </linearGradient>
+    <linearGradient id="mGold" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#B8842F"/>
+      <stop offset="100%" stop-color="#E4C27A"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="700" fill="url(#mBg)"/>
+
+  <!-- fine grid, "structured process" -->
+  <g stroke="#ffffff" stroke-opacity="0.045" stroke-width="1">
+    <line x1="0" y1="120" x2="800" y2="120"/>
+    <line x1="0" y1="240" x2="800" y2="240"/>
+    <line x1="0" y1="360" x2="800" y2="360"/>
+    <line x1="0" y1="480" x2="800" y2="480"/>
+    <line x1="0" y1="600" x2="800" y2="600"/>
+    <line x1="130" y1="0" x2="130" y2="700"/>
+    <line x1="290" y1="0" x2="290" y2="700"/>
+    <line x1="450" y1="0" x2="450" y2="700"/>
+    <line x1="610" y1="0" x2="610" y2="700"/>
+    <line x1="770" y1="0" x2="770" y2="700"/>
+  </g>
+
+  <!-- four connected nodes: نستمع، نحلل، نركب الصورة، نسلم القرار -->
+  <g stroke="url(#mGold)" stroke-width="2.5" fill="none">
+    <path d="M 150 560 L 330 430 L 500 460 L 660 200"/>
+  </g>
+
+  <g>
+    <circle cx="150" cy="560" r="14" fill="#0D4B34" stroke="#E4C27A" stroke-width="3"/>
+    <circle cx="330" cy="430" r="14" fill="#0D4B34" stroke="#E4C27A" stroke-width="3"/>
+    <circle cx="500" cy="460" r="14" fill="#0D4B34" stroke="#E4C27A" stroke-width="3"/>
+    <circle cx="660" cy="200" r="16" fill="#E4C27A"/>
+  </g>
+
+  <text x="150" y="605" fill="#ffffff" fill-opacity="0.75" font-family="Tahoma, sans-serif" font-size="20" text-anchor="middle">01</text>
+  <text x="330" y="475" fill="#ffffff" fill-opacity="0.75" font-family="Tahoma, sans-serif" font-size="20" text-anchor="middle">02</text>
+  <text x="500" y="505" fill="#ffffff" fill-opacity="0.75" font-family="Tahoma, sans-serif" font-size="20" text-anchor="middle">03</text>
+  <text x="660" y="170" fill="#0D4B34" fill-opacity="0.95" font-family="Tahoma, sans-serif" font-size="20" font-weight="bold" text-anchor="middle">04</text>
+
+  <!-- open document / ledger motif in the corner -->
+  <g transform="translate(560,470)" opacity="0.9">
+    <rect x="0" y="0" width="150" height="110" rx="3" fill="#0B3F2C" stroke="#E4C27A" stroke-opacity="0.35"/>
+    <line x1="15" y1="25" x2="120" y2="25" stroke="#E4C27A" stroke-opacity="0.5" stroke-width="2"/>
+    <line x1="15" y1="48" x2="135" y2="48" stroke="#ffffff" stroke-opacity="0.2" stroke-width="1.5"/>
+    <line x1="15" y1="68" x2="135" y2="68" stroke="#ffffff" stroke-opacity="0.2" stroke-width="1.5"/>
+    <line x1="15" y1="88" x2="95" y2="88" stroke="#ffffff" stroke-opacity="0.2" stroke-width="1.5"/>
+  </g>
+</svg>

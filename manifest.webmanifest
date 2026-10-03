@@ -1,0 +1,11 @@
+{
+  "name": "بروفيشنال بلس",
+  "short_name": "بروفيشنال بلس",
+  "description": "استشارات اقتصادية ودراسات جدوى",
+  "lang": "ar",
+  "dir": "rtl",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f7f5ef",
+  "theme_color": "#0d4b3a"
+}
